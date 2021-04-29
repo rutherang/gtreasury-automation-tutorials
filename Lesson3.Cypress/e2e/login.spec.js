@@ -6,7 +6,7 @@ describe("login module", () => {
     cy.getByTestId("username").type("standard_user");
     cy.getByTestId("password").type("secret_sauce");
     cy.getByTestId("login-button").click();
-    cy.get("span.title").should("have.text", "products");
+    cy.get("span.title").should("have.text", "Products");
   });
 
   it("login as lockout user", () => {
